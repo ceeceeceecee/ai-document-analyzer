@@ -1,0 +1,27 @@
+# Umgebungsvariablen (API-Keys)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Logs
+*.log
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Geheime Dateien
+*.key
+*.pem
+
+# Daten
+data/
