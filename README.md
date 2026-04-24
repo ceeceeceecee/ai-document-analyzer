@@ -33,27 +33,35 @@ Automatically analyze, summarize and classify PDF & DOCX documents — with Clau
 
 ---
 
-## Quick Start
-
-```bash
-# Lokal starten
-git clone https://github.com/ceeceeceecee/ai-document-analyzer.git
-cd ai-document-analyzer
-pip install -r requirements.txt
-cp .env.example .env      # API-Keys eintragen
-streamlit run app.py
-
-# Oder mit Docker
-docker compose up -d
-```
-
-Dann: [http://localhost:8501](http://localhost:8501) öffnen.
+## 🚀 Schnellstart
 
 ### Voraussetzungen
 
-- Python 3.11+
-- Claude/Gemini API Key oder Ollama (lokal)
-- (Optional) Docker für Container-Deployment
+| Komponente | Version | Zweck |
+|---|---|---|
+| Python | 3.11+ | Streamlit Web-App |
+| Claude/Gemini API Key oder Ollama | aktuell | KI-Analyse |
+| Docker (optional) | 20.10+ | Container-Deployment |
+
+### Installation
+
+```bash
+git clone https://github.com/ceeceeceecee/ai-document-analyzer.git
+cd ai-document-analyzer
+
+# Abhängigkeiten installieren
+pip install -r requirements.txt
+
+# Konfiguration
+cp .env.example .env
+# API-Keys in .env eintragen
+```
+
+### Erste Schritte
+
+1. **Lokal starten:** `streamlit run app.py` und [http://localhost:8501](http://localhost:8501) öffnen
+2. **Oder mit Docker:** `docker compose up -d`
+3. **Dokument hochladen** und KI-Analyse starten — unterstützt PDF & DOCX
 
 ---
 
