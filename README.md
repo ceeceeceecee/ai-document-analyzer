@@ -120,6 +120,10 @@ ai-document-analyzer/
 
 ---
 
+
+## 👤 Autor
+
+**Cela** — Freelancer für digitale Verwaltungslösungen
 ## Lizenz
 
 [MIT](LICENSE) — frei nutzbar.
