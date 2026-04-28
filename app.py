@@ -9,6 +9,11 @@ import json
 import tempfile
 from pathlib import Path
 
+# -- Unified Theme System --
+import sys, os as _theme_os
+sys.path.insert(0, _theme_os.path.dirname(_theme_os.path.abspath(__file__)))
+from theme import init_theme, theme_toggle_sidebar, app_footer
+
 import streamlit as st
 import pandas as pd
 
@@ -21,6 +26,8 @@ st.set_page_config(
     page_icon="📄",
     layout="wide",
 )
+
+init_theme()
 
 # KI-Anbieter Auswahloptionen
 AI_PROVIDER = {
@@ -183,3 +190,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# -- Theme Toggle --
+theme_toggle_sidebar()
+
+# -- Footer --
+app_footer()
