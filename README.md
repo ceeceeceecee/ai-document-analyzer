@@ -1,138 +1,58 @@
-# AI Document Analyzer
+# Ai Document Analyzer
 
-[![Python](https://img.shields.io/badge/python-3.11+-green?logo=python)](https://python.org)
-[![Streamlit](https://img.shields.io/badge/streamlit-1.30+-FF4B4B?logo=streamlit)](https://streamlit.io)
-[![Docker](https://img.shields.io/badge/docker-ready-2496ED?logo=docker)](https://www.docker.com)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Claude](https://img.shields.io/badge/Claude-supported-9945FF?logo=anthropic)](https://anthropic.com)
+<p align="center">
+<img src="https://raw.githubusercontent.com/ceeceeceecee/ai-document-analyzer/main/docs/coletrading-banner.svg" alt="ColeTrading" width="600">
+</p>
 
-> PDF & DOCX Dokumente automatisch analysieren, zusammenfassen und klassifizieren — mit Claude, Gemini oder Ollama.
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python) ![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-FF4B4B?logo=streamlit) ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker) ![License](https://img.shields.io/badge/License-MIT-blue) ![Claude](https://img.shields.io/badge/Claude-Supported-9945FF?logo=anthropic)
 
-Automatically analyze, summarize and classify PDF & DOCX documents — with Claude, Gemini or Ollama.
+> KI-gestützte Dokumentenanalyse für Behörden und Unternehmen
 
----
+## Overview
 
-## Screenshot
-
-![Streamlit UI](screenshots/streamlit-ui.png)
-*Upload-Bereich mit Live-Analyse: Klassifizierung, Zusammenfassung und Schlüsseldaten-Extraktion in Echtzeit.*
-
----
+Automatisiert die Analyse von PDFs und Dokumenten mit Claude AI. Extrahiert Schlüsselinformationen, klassifiziert Dokumente und generiert Zusammenfassungen — komplett DSGVO-konform und self-hosted.
 
 ## Features
 
-| Feature | Beschreibung |
-|---------|-------------|
-| PDF & DOCX Upload | Drag & Drop oder Dateiauswahl |
-| KI-Zusammenfassung | Automatisch in max. 5 Sätzen (Deutsch/Englisch) |
-| Dokumentklassifizierung | Rechnung, Vertrag, Angebot, Bericht, Sonstiges |
-| Schlüsseldaten-Extraktion | Datum, Betrag, Parteien, Fristen als JSON |
-| Multi-Provider | Claude, Gemini, Ollama (lokal) |
-| Export | JSON & CSV |
-| 100% lokal möglich | Mit Ollama keine Cloud-API nötig |
-
----
-
-## 🚀 Schnellstart
-
-### Voraussetzungen
-
-| Komponente | Version | Zweck |
-|---|---|---|
-| Python | 3.11+ | Streamlit Web-App |
-| Claude/Gemini API Key oder Ollama | aktuell | KI-Analyse |
-| Docker (optional) | 20.10+ | Container-Deployment |
-
-### Installation
-
-```bash
-git clone https://github.com/ceeceeceecee/ai-document-analyzer.git
-cd ai-document-analyzer
-
-# Abhängigkeiten installieren
-pip install -r requirements.txt
-
-# Konfiguration
-cp .env.example .env
-# API-Keys in .env eintragen
-```
-
-### Erste Schritte
-
-1. **Lokal starten:** `streamlit run app.py` und [http://localhost:8501](http://localhost:8501) öffnen
-2. **Oder mit Docker:** `docker compose up -d`
-3. **Dokument hochladen** und KI-Analyse starten — unterstützt PDF & DOCX
-
----
-
-## Projektstruktur
-
-```
-ai-document-analyzer/
-├── app.py                      # Streamlit Web-App
-├── analyzer/
-│   ├── document_processor.py   # PDF/DOCX Verarbeitung
-│   └── ai_analyzer.py          # KI-Analyse (Claude/Gemini/Ollama)
-├── prompts/
-│   ├── summarize.txt           # System-Prompt: Zusammenfassung
-│   ├── classify.txt            # System-Prompt: Klassifizierung
-│   └── extract.txt             # System-Prompt: Schlüsseldaten
-├── docker-compose.yml
-├── requirements.txt
-└── docs/
-    └── setup-guide.md          # Detaillierte Einrichtung
-```
-
----
-
-## Use Cases
-
-| Zielgruppe | Szenario |
-|------------|----------|
-| Buchhaltung | Rechnungen: Beträge, Daten, Referenznummern extrahieren |
-| Rechtsabteilung | Verträge: Art erkennen, Fristen & Parteien identifizieren |
-| Assistenz | Posteingang: E-Mail-Anhänge automatisch klassifizieren |
-| IT / DevOps | Dokumentation: Technische Docs zusammenfassen |
-
----
+- PDF- und Dokumentenanalyse mit Claude AI
+- Automatische Klassifizierung und Kategorisierung
+- Schlüsselinformation-Extraktion
+- Zusammenfassungs-Generierung
+- Batch-Verarbeitung
+- DSGVO-konforme Datenverarbeitung
 
 ## Tech Stack
 
-- **Streamlit** — Web-Interface
-- **Claude / Gemini / Ollama** — KI-Analyse
-- **PyPDF2 / python-docx** — Dokument-Verarbeitung
-- **Docker** — Container-Deployment
+| Tech | Zweck |
+|------|-------|
+| Python 3.11+ | Backend & API |
+| Streamlit | Web-Interface |
+| Claude AI | Dokumentenanalyse |
+| Docker | Deployment |
 
----
+## Quick Start
 
-## Roadmap
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-- [ ] Batch-Verarbeitung (Ordner)
-- [ ] OCR für gescannte Dokumente
-- [ ] RAG: Fragen an Dokumente stellen
-- [ ] Multi-Sprachen-Erkennung
+## Screenshots
+
+**Streamlit Web-Interface mit Dokumenten-Upload und Analyse-Ergebnissen**
+
+<img src="screenshots/streamlit-ui.png" alt="Streamlit Web-Interface mit Dokumenten-Upload und Analyse-Ergebnissen" width="800">
 
 ---
 
 ## Contributing
 
-1. Fork → Feature-Branch → Commit → Push → Pull Request
+Beiträge sind willkommen! Bitte erstelle einen Issue oder Pull Request.
 
----
+## License
 
+MIT License — siehe [LICENSE](LICENSE).
 
-## 👤 Autor
-
-**Cela** — Freelancer für digitale Verwaltungslösungen
-## Lizenz
-
-[MIT](LICENSE) — frei nutzbar.
-
-## Author
-
-[ceeceeceecee](https://github.com/ceeceeceecee)
-
-## Weitere Projekte
-
-- [Self-Hosted AI Chatbot](https://github.com/ceeceeceecee/self-hosted-ai-chatbot) — DSGVO-konformer Chatbot
-- [AI Market Analysis Bot](https://github.com/ceeceeceecee/ai-market-analysis-bot) — Marktanalyse
+<p align="center">
+<a href="https://github.com/ceeceeceecee">ColeTrading</a> &bull; DSGVO-konform &bull; Self-Hosted &bull; Open Source
+</p>

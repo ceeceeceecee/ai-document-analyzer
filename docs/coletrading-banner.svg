@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" fill="none">
+  <rect width="800" height="200" rx="12" fill="#0d1117"/>
+  <rect x="1" y="1" width="798" height="198" rx="11" stroke="#30363d" stroke-width="1"/>
+  <text x="400" y="90" text-anchor="middle" fill="#e6edf3" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="2">ColeTrading</text>
+  <text x="400" y="130" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" letter-spacing="1">AI-Powered Solutions for Public Administration &amp; Business</text>
+  <line x1="200" y1="150" x2="600" y2="150" stroke="#30363d" stroke-width="1"/>
+  <text x="400" y="172" text-anchor="middle" fill="#58a6ff" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" letter-spacing="1">DSGVO-KONFORM &bull; SELF-HOSTED &bull; OPEN SOURCE</text>
+</svg>
